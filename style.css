@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgb(62, 9, 66);
+    color: rgb(238, 236, 236);
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0px 0px 0px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gameContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background: rgb(228, 224, 224);
+}
+
+.gameInfo {
+    padding: 30px;
+}
+
+.imgBox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    background: #8be064;
+    padding: 1px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 30px;
+    }
+
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+   
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+    
+}
